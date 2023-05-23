@@ -1,16 +1,25 @@
-
 {
   "contracts": [
     {
       "contract": "TetherToken",
-      "constructors": [1000000000, "TetherToken", "USDT", 5],
+      "constructors": [
+        1000000000,
+        "TetherToken",
+        "USDT",
+        5
+      ],
       "constructorPayableEthAmount": 0
     },
     {
       "contract": "SealToken",
-      "constructors": [1000000000, "TetherToken", "USDT", 5],
+      "constructors": [
+        1000000000,
+        "TetherToken",
+        "USDT",
+        5
+      ],
       "constructorPayableEthAmount": 0
-    }, 
+    },
     {
       "contract": "ContractAddressTracker",
       "constructors": [
@@ -18,9 +27,12 @@
         "{{TetherToken}}"
       ],
       "constructorPayableEthAmount": 0,
-      "dependentContracts": ["SealToken", "TetherToken"]
+      "dependentContracts": [
+        "SealToken",
+        "TetherToken"
+      ]
     }
   ],
-  "targetEnvironment": "sepolia",
+  "targetEnvironment": "goerli",
   "deployerId": "pandasteak"
 }
